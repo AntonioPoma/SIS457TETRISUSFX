@@ -1,3 +1,4 @@
+//SE MODIFICARON ALGUNOS COMENTARIOS
 #pragma once
 #include"Bloques.h"
 #include <iostream>
