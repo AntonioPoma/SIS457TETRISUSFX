@@ -1,8 +1,6 @@
-//SE MODIFICARON ALGUNOS COMENTARIOS
 #pragma once
-#include"Bloques.h"
-#include <iostream>
-using namespace std;
+#include"Bloque.h"
+
 class Tablero
 {
 private:
@@ -10,13 +8,15 @@ private:
 	int filaLimiteSuperior;
 	int filaActual;
 	int numeroFilasEliminadas;
-	Bloques bloqueSiguiente;
+	Bloque bloqueSiguiente;
 
 public:
 	Tablero() {
-		nombre = "Tablero sin nombre";
+		nombre = "tablero sin nombre";
 	}
-	void inicializarTablero();
+
+	void incializarTablero();
+
 	bool rotarBloque();
 	void bajarBloque();
 	bool moverBloque(int direccion);
@@ -25,7 +25,5 @@ public:
 	//Metodos accesores
 	void setNombre(string _nombre) { nombre = _nombre; }
 	string getNombre() { return nombre; }
-
-
 };
 

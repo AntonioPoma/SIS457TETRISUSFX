@@ -1,6 +1,7 @@
 #pragma once
-#include <iostream>
+#include<string>
 #include "Tablero.h"
+
 using namespace std;
 
 class Escenario
@@ -13,10 +14,12 @@ private:
 	string imagenFondo;
 	int puntaje;
 	int MejorPuntaje;
-	int novel;
-	int numerodevidas;
+	int nivel;
+	int numeroVidas;
 	Tablero tablero;
-
+	int Casillas;
+	float MargenDelJuego;
+	int ColorDeFondo;
 
 
 public:
@@ -24,11 +27,9 @@ public:
 		puntaje = 0;
 	}
 
-
 	void setNombre(string _nombre) { nombre = _nombre; }
 	string getNombre() { return nombre; }
 
-	void setTablero(string _tablero) { tablero = _tablero; }
-	string getTablero() { return tablero; }
+	void setTablero(Tablero _tablero) { tablero = _tablero; }
+	Tablero getTablero() { return tablero; }
 };
-
