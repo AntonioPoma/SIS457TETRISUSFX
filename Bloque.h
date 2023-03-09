@@ -8,18 +8,25 @@ using namespace std;
 class Bloque
 {
 private:
-	string nombre;
 	string forma;
 	string color;
-	int sentidoRotacion;
+	float velocidad;
 	int alto;
 	int ancho;
-	float velocidad;
-	int posicionX;
-	int posicionY;
+	int posicion_X;
+	int posicion_Y;
+	//velocidad de flotación;
+	bool enMovimiento;
+	int anguloRotacion;
+	bool conRotacion;
+	int gradosRotacionHorizontal;
+	int gradosRotacionVertical;
 	int numeroTiles;
-	int angulo;
+	vector<vector<bool>> apariencia;
 public:
+	Bloque();
+	Bloque(string _nombre, string _color);
+	Bloque(float);
 	void rotar(int _angulo);
 	void mover(int _posicion);
 	void acelerar(float _velocidad);
