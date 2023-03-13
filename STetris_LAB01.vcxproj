@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClInclude Include="Bloque.h" />
     <ClInclude Include="BloqueMutante.h" />
+    <ClInclude Include="Bloque_Convencional.h" />
+    <ClInclude Include="Bloque_ilogico.h" />
+    <ClInclude Include="Bloque_Tetromino.h" />
     <ClInclude Include="Escenario.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Niveles.h" />
@@ -138,10 +141,12 @@
   <ItemGroup>
     <ClCompile Include="BloqueMutante.cpp" />
     <ClCompile Include="Bloque.cpp" />
+    <ClCompile Include="Bloque_Convencional.cpp" />
+    <ClCompile Include="Bloque_ilogico.cpp" />
+    <ClCompile Include="Bloque_Tetromino.cpp" />
     <ClCompile Include="Escenario.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Niveles.cpp" />
-    <ClCompile Include="Pieza.cpp" />
     <ClCompile Include="Principal.cpp" />
     <ClCompile Include="Tablero.cpp" />
   </ItemGroup>

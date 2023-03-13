@@ -24,6 +24,9 @@ private:
 	int numeroTiles;
 	vector<vector<bool>> apariencia;
 public:
+	void mostrar() {
+		cout << "Soy la clase bloque" << endl;
+	}
 	Bloque();
 	Bloque(string _nombre, string _color);
 	Bloque(float);

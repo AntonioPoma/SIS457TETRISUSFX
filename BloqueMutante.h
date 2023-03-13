@@ -1,5 +1,8 @@
 #pragma once
 #include "Bloque.h"
+#include<iostream>
+
+using namespace std;
 class BloqueMutante :
     public Bloque
 {
@@ -7,9 +10,6 @@ private:
     int cambiarForma;
     int detenerBloque;
     int duplicarBloque;
-
-
-
 
 public:
     BloqueMutante(int, bool);

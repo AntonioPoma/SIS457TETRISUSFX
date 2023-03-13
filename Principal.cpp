@@ -1,11 +1,14 @@
 #include <iostream>
 #include "Escenario.h"
+#include"Bloque.h"
 
 using namespace std;
 
 
 
 int main() {
+	Bloque objetoBloque;
+	objetoBloque.mostrar();
 	cout << "Hola bienvenido al mundo de Tetris." << endl;
 
 	Escenario escenarioInicial;
